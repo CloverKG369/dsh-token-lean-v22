@@ -1,0 +1,5 @@
+# dsh-token-lean bundle layer: one host plugin (nine features) + one Web
+# settings surface. Mounted by `dsh plugin --profile <name> add <this-package>`.
+- insert:
+    - id: token-lean
+      name: '@local/dsh-token-lean-v22'

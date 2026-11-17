@@ -1,0 +1,52 @@
+{
+  "name": "@local/dsh-token-lean-v22",
+  "version": "1.6.2",
+  "description": "One DeepSeek Harness plugin for nine token-efficiency features: session-dedup, lite, RTK, headroom, caveman, YAGNI, ponytail, I-have-ADHD and antislop — with a per-feature settings UI.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSE",
+    "licenses"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check lib/index.js && node --test"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "token",
+    "compression",
+    "session-dedup",
+    "rtk",
+    "headroom",
+    "caveman",
+    "ponytail",
+    "yagni",
+    "adhd",
+    "antislop"
+  ]
+}
